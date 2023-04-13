@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  background-color: #fff;
+  position: relative;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #111;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type='submit'] {
+  border-radius: 10px;
+  font-size: 20px;
+  display: block;
+  border: none;
+  background-color: #111;
+  color: #ccc;
+  padding: 10px;
+}
+
+input[type='radio'] {
+  height: 0;
+  width: 0;
+}
+
+.importance label{
+  display: flex;
+  align-items: center;
+}
+
+.importance input {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+input[type='checkbox'] {
+  height: 0;
+  width: 0;
+}
+
+.checkbox input{
+  height: 30px;
+  width: 30px;
+  border: 1px solid #000;
+  margin-right: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 60%;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  margin: 100px auto;
+  display: grid;
+  row-gap: 40px;
+}
+
+.infoHead {
+  text-align: center;
+  font-size: 30px;
+}
+
+.infoInputs {
+  display: grid;
+  row-gap: 50px;
+}
+
+.logSign {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.logSign a{
+  background-color: #ccc;
+  color: #111;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+/* Task */
+.task {
+  margin-top: 50px;
+}
+
+.task form {
+  display: grid;
+  padding: 30px;
+  row-gap: 50px;
+}
+
+.importance {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.msg {
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid #07b52f;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #07b52f;
+  margin: 50px;
+}
+
+/* Navbar */ 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.homeLink {
+  color: #000;
+  font-size: 60px;
+  text-decoration: none;
+}
+
+.homeLink i {
+  display: block;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav .link{
+  color: #fff;
+  background-color: #000;
+  margin-left: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.navLink {
+  font-size: 30px;
+  margin-left: 30px;
+  border: #222 1px solid;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: #000;
+}
+
+.tasksLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Home */
+.home {
+  margin-top: 100px;
+}
+
+.homeIcon {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+}
+
+.home h1{
+  text-align: center;
+}
+
+.homeLinks {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly; 
+}
+
+.taskLink {
+  font-size: 2rem;
+  border: 2px solid #aaa;
+  padding: 10px;
+  border-radius: 10px;
+  color: #111;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskLink i {
+  margin-right: 5px;
+}
+
+.taskLink:hover {
+  border: none;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Tasks */
+.tasks {
+  margin: 20px;
+}
+
+.taskInfo {
+  background-color: #bbb;
+  display: grid;
+  margin: 30px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  row-gap: 20px;
+}
+
+.taskCard {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  color: #000;
+}
+
+.details {
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+.details i {
+  font-size: 30px;
+}
+
+.noTask {
+  text-align: center;
+  margin-top: 100px;
+  color: #cd1212;
+  border: 2px solid #cd1212;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+
+.taskCard button {
+  border: none;
+  background-color: #bbb;
+}
+
+.delete {
+  color: #e30a0a;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.delete:hover {
+  color: #f13a3a;
+}
+
+.fa-angle-down {
+  font-size: 30px;
+}
+
+@media (max-width: 600px){
+  .nav .link {
+    display: none;
+  }
+
+  .homeLink {
+    justify-self: flex-start;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tasksLink {
+    justify-content: flex-end;
+  }
+
+  .importance {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .importance label {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .task {
+    margin-top: 30px;
+    font-size: 20px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .task form {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .taskLink {
+    font-size: 25px;
+  }
+
+  .card {
+    padding: 10px;
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .card input {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .task {
+    width: 80%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .tasks {
+    width: 80%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .homeIcon {
+    font-size: 175px;
+  }
+
+  .taskLink {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .card {
+    width: 40%;
+  }
+}
