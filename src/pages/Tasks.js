@@ -58,7 +58,7 @@ const Tasks = () => {
             <div className='taskCard details'>
               <p><b>Date:</b> {task.date} {task.time}</p>
               <p><b>Importance:</b> {task.importance}</p>
-              <i className="fa-solid fa-bell" style={{color: task.notify ? '#ddd' : '#000'}}></i>
+              <i className="fa-solid fa-bell" style={{color: task.notify ? '#000' : '#ddd'}}></i>
             </div>           
           )}
         </div>     
